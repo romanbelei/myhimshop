@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/myhimshop/static/css/main.f855e6bc.css",
-    "main.js": "/myhimshop/static/js/main.7b1a593f.js",
+    "main.css": "/myhimshop/static/css/main.fcbe7dd2.css",
+    "main.js": "/myhimshop/static/js/main.665eb4c6.js",
     "static/js/453.9a97bccc.chunk.js": "/myhimshop/static/js/453.9a97bccc.chunk.js",
-    "static/media/logo.svg": "/myhimshop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/computer.png": "/myhimshop/static/media/computer.5e56530d0ea3793fd73d.png",
+    "static/media/banner.png": "/myhimshop/static/media/banner.60b57e7c22678c62bf30.png",
+    "static/media/avatar.jpg": "/myhimshop/static/media/avatar.4bc3b938691acbda7100.jpg",
+    "static/media/devices.png": "/myhimshop/static/media/devices.a0974f63230d0b90cbec.png",
+    "static/media/shoe.png": "/myhimshop/static/media/shoe.db601c8f04844976b606.png",
+    "static/media/logo.svg": "/myhimshop/static/media/logo.d519e424ce28aa8d02062bd19b5f8f8d.svg",
     "index.html": "/myhimshop/index.html",
-    "main.f855e6bc.css.map": "/myhimshop/static/css/main.f855e6bc.css.map",
-    "main.7b1a593f.js.map": "/myhimshop/static/js/main.7b1a593f.js.map",
+    "main.fcbe7dd2.css.map": "/myhimshop/static/css/main.fcbe7dd2.css.map",
+    "main.665eb4c6.js.map": "/myhimshop/static/js/main.665eb4c6.js.map",
     "453.9a97bccc.chunk.js.map": "/myhimshop/static/js/453.9a97bccc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.7b1a593f.js"
+    "static/css/main.fcbe7dd2.css",
+    "static/js/main.665eb4c6.js"
   ]
 }
