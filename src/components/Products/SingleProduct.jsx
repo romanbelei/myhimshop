@@ -26,7 +26,7 @@ const SingleProduct = () => {
       useEffect(() => {
         if (!data || !list.length) return;
     
-        dispatch(getRelatedProducts(data.category.id));
+        dispatch(getRelatedProducts(data.id_category));
       }, [data, dispatch, list.length]);
 
       return !data ? (

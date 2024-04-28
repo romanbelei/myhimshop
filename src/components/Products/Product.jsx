@@ -12,18 +12,19 @@ const SIZES = [4, 4.5, 5];
 
 const Product = (item) => {
     const { title, price, images, description } = item;
+    let imagesMass = (images.split(','))
     const dispatch = useDispatch();
 
     const [currentImage, setCurrentImage] = useState();
     const [currentSize, setCurrentSize] = useState();
 
     useEffect(() => {
-        if (!images.length) return;
+        if (!imagesMass.length) return;
     
-        setCurrentImage(images[0]
-            .slice(2, -2)
+        setCurrentImage(imagesMass[0]
+            //.slice(2, -2)
         );
-      }, [images]);
+      }, [imagesMass]);
 
       const addToCart = () => {
         dispatch(addItemToCart(item));
@@ -39,7 +40,7 @@ const Product = (item) => {
             }}
                 />
                 <div className={styles["images-list"]}>
-                    {images.map((image, i) => (
+                    {imagesMass.map((image, i) => (
                         <div
                         key={i}
                         className={styles.image}
@@ -53,7 +54,7 @@ const Product = (item) => {
 
             <div className={styles.info}>
                 <h1 className={styles.title}>{title}</h1>
-                <div className={styles.price}>{price}$</div>
+                <div className={styles.price}>{price}грн</div>
                 <div className={styles.color}>
                 <span>Color:</span> Green
                 </div>

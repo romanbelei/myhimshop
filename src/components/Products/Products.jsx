@@ -11,12 +11,14 @@ const Products = ({ title, style = {}, products = [], amount }) => {
       {title && <h2>{title}</h2>}
 
       <div className={styles.list}>
-        {list.map(({ id, images, title, category: { name: cat }, price }) => (
+        {list.map(({ id, images, title,  price }) => (
           <Link to={`/products/${id}`} key={id} className={styles.product}>
             <div
               className={styles.image}
               style={{ 
-                backgroundImage: `url(${images[0]
+                backgroundImage: `url(${
+                  //images[0]
+                  (images.split(','))[0]
                  //.slice(2, -2)
                 })`
                 //backgroundImage: `url((${images[0].includes('"["')}) ? ${images[0].slice(2, -2)}) : ${images[0].slice(2, -2)}))`
@@ -27,10 +29,10 @@ const Products = ({ title, style = {}, products = [], amount }) => {
 
             <div className={styles.wrapper}>
               <h3 className={styles.title}>{title}</h3>
-              <div className={styles.cat}>{cat}</div>
+              
               <div className={styles.info}>
                 <div className={styles.prices}>
-                  <div className={styles.price}>{price}$</div>
+                  <div className={styles.price}>{price}грн</div>
                   <div className={styles.oldPrice}>
                     {Math.floor(price * 0.8)}$
                   </div>
