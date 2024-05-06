@@ -10,10 +10,10 @@ import Banner from "../Banner/Banner";
 
 const Home = () => {
     const dispatch = useDispatch();
-    const {
-        products: { list, filtered },
-        categories,
-      } = useSelector((state) => state);
+    const {list, filtered 
+      } = useSelector(({ products }) => products);
+      
+    const categories = useSelector(({ categories }) => categories);
     
       useEffect(() => {
         if (!list.length) return;
@@ -23,10 +23,10 @@ const Home = () => {
     return(
         <>
         <Poster />
-        <Products products={list} amount={155} title="Trending"/>
+        <Products products={list} amount={25} title="Trending"/>
         <Categories products={categories.list} amount={5} title="Worth seeing"/>
         <Banner />
-        <Products products={filtered} amount={5} title="Less than 100$" />
+        <Products products={filtered} amount={5} title="Less than 100грн" />
         </>
     )
 };

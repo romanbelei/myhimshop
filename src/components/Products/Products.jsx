@@ -17,8 +17,8 @@ const Products = ({ title, style = {}, products = [], amount }) => {
               className={styles.image}
               style={{ 
                 backgroundImage: `url(${
-                  //images[0]
-                  (images.split(','))[0]
+                  images[0]
+                  //(images.split(','))[0]
                  //.slice(2, -2)
                 })`
                 //backgroundImage: `url((${images[0].includes('"["')}) ? ${images[0].slice(2, -2)}) : ${images[0].slice(2, -2)}))`

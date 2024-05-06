@@ -20,7 +20,7 @@ const App = () => {
       dispatch(getCategories());
       dispatch(getProducts());
      },[dispatch]);
-     console.log("test app")
+     //console.log("test app")
     return (
         <div className="app">
           <Header />

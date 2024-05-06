@@ -13,6 +13,7 @@ const AppRoutes = () => (
         <Routes>
             <Route index element={<Home />} />
             <Route path={ROUTES.PRODUCT} element={<SingleProduct />} />
+            <Route path={ROUTES.MYHIMSHOP} element={<Home />} />
             <Route path={ROUTES.PROFILE} element={<Profile />} />
             <Route path={ROUTES.CATEGORY} element={<SingleCategory />} />
             <Route path={ROUTES.CART} element={<Cart />} />

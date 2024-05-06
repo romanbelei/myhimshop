@@ -30,7 +30,7 @@ const productsSlice = createSlice({
       state.filtered = state.list.filter(({ price }) => price < payload);
     },
     getRelatedProducts: (state, { payload }) => {
-      const list = state.list.filter(({ id_category }) => id_category === payload);
+      const list = state.list.filter(({ category: { id } }) => id === payload);
       state.related = shuffle(list);
     },
   },
